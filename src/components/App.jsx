@@ -1,4 +1,4 @@
-import user from 'C:/Users/lex/Documents/GitHub/goit-react-hw-01-components/src/user.json';
+// import user from 'C:/Users/lex/Documents/GitHub/goit-react-hw-01-components/src/user.json';
 import user from '../'
 import { Profile } from './Profile';
 
