@@ -1,10 +1,10 @@
-import user from '../dataHW/user.json';
+import user from '../data/user.json';
 import { Profile } from './Profile/Profile';
-import { Statistics } from './Statistics/Statistics';
+import { StatisticsList } from './StatisticsList/StatisticsList';
 
 export const App = () => {
   return (
-  
+    <>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -12,8 +12,7 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      // <Statistics />
-    
+      <Statistics stats={data} />
+    </>
   );
 };
- 
