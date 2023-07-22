@@ -1,5 +1,8 @@
 import { FriendItems } from 'components/FriendsItems/FriendsItems';
 import css from './FriendsList.module.css'
+import PropTypes from 'prop-types';
+
+
 export function FriendsList({ friends }) {
   return (
     <section className={css.section}>
@@ -18,3 +21,6 @@ export function FriendsList({ friends }) {
     </section>
   );
 }
+FriendsList.propTypes = {
+  friends: PropTypes.array.isRequired,
+};

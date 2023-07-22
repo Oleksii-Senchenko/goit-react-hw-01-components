@@ -1,0 +1,21 @@
+
+  .transactionHistory {
+    width: 100%;
+
+  }
+  .listName {
+    font-weight: bold;
+    padding: 7px;
+    background: #096371;
+
+  }
+  .item {
+    padding: 10px;
+  text-align: center;
+   
+  }
+  
+  .list:nth-child(even) {
+    background: #f8f8f8;
+  }
+  

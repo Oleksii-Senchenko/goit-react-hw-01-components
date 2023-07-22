@@ -1,7 +1,6 @@
-import css from './Statistic.module.css'
-
-
-export function Statistics({ label, percentage}) {
+import css from './Statistic.module.css';
+import PropTypes from 'prop-types';
+export function Statistics({ label, percentage }) {
   return (
     <li className={css.item}>
       <span>{label}</span>
@@ -9,3 +8,8 @@ export function Statistics({ label, percentage}) {
     </li>
   );
 }
+
+Statistics.propTypes = {
+  label: PropTypes.string,
+  percentage: PropTypes.string,
+};
