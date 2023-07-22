@@ -11,15 +11,15 @@ export function Profile({ avatar, username, tag }) {
       </div>
 
       <ul className={css.stats}>
-        <li>
+        <li className={css.item}>
           <span className={css.label}>Followers</span>
           <span className="quantity">1000</span>
         </li>
-        <li>
+        <li className={css.item}>
           <span className="label">Views</span>
           <span className="quantity">2000</span>
         </li>
-        <li>
+        <li className={css.item}>
           <span className="label">Likes</span>
           <span className="quantity">3000</span>
         </li>

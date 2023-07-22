@@ -1,12 +1,17 @@
 import { Statistics } from 'components/Statistics/Statistics';
-import data from '../../data/data.json';
+import css from './statistics.module.css'
 
-export function StatisticsList() {
+//К СОЖЕЛЕНИЮ НЕ ПОНЯЛ КАК ОТРЕНДЕРИТЬ ТАЙТЛ ПО УСЛОВИЮ, АНАЛОГИЮ С УРОКА НЕ НАШЕЛ. ТАМ БЫЛИ СТИЛИ ПО УСЛОВИЮ НО НЕ РАЗМЕТКА
+// ТАКЖЕ ИНТЕРЕСТНО КАК ПОДСТАВИТЬ ФУНКЦИЮ ДЛЯ РАНДОМНЫХ ЦВЕТОВ ДЛЯ КАЖДОЙ ЛИШКИ, Я ПРОБЫВАЛ ПИСАТЬ ЕЕ ДО export function StatisticsList, 
+//А ВЫЗЫВАТЬ ПОСЛЕ РЕТЕРНА, НО БЕЗУСПЕШНО. ЗАРАНИЕ СПАСИБО)))))))
+
+
+export function StatisticsList({stats}) {
   return (
-    <section class="statistics">
-      <ul class="stat-list">
-        {data.map((id, label, percentage) => {
-          return <Statistics id={id} label={label} percentage={percentage} />;
+    <section class={css.statistics}>
+      <ul class={css.list}>
+        {stats.map(({id, label, percentage}) => {
+          return <Statistics  key={id} label={label} percentage={percentage} />;
         })}
       </ul>
     </section>

@@ -38,8 +38,8 @@
 }
 /* li:first-child {
 } */
-li {
-  list-style: none;
+.item {
+
   display: flex;
   flex-direction: column;
   align-items: center;
